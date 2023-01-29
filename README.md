@@ -51,7 +51,7 @@ The plugin configuration is done via Homebridge UI plugins settings, and is docu
 The result is saved in Homebridge config and looks like this, but should not to be manually edited:
 ```
 {
-    "name": "<stove name, MUST be the same than one you configured in official stove mobile app, and you now want to control from HomeBridge>",
+    "name": "<stove name, MUST be the same than one you configured in official stove mobile app, and you now want to control from HomeBridge, use '-' for Piazzetta>",
     "brand": "<stove brand, to be chosen from a list, as it actually affects plugin internal settings>",
     "login": "<Your regular stove app login (MyPiazzetta for Piazzetta stoves)>",
     "password": "<Your regular stove app password (MyPiazzetta for Piazzetta stoves)>",

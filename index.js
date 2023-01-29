@@ -20,7 +20,7 @@ module.exports = (api) => {
 
 // Mapping of supported brands and associated settings.
 const MAP_SUPPORTED_BRANDS = new Map([
-	["piazzetta", ["458632", "https://piazzetta.agua-iot.com/", "https://piazzetta.iot.web2app.it/api/bridge/endpoint/"]],
+	["piazzetta", ["458632", "https://piazzetta.agua-iot.com/", "https://piazzetta-iot.app2cloud.it/api/bridge/endpoint/"]],
 	["evastampaggi", ["635987", "https://evastampaggi.agua-iot.com/"]],
 	["nordicfire", ["132678", "https://nordicfire.agua-iot.com/"]],
 	["alphaplam", ["862148", "https://alfaplam.agua-iot.com/"]],
@@ -90,7 +90,7 @@ const HTTP_REQ_LOCAL_HEADER = "local";
 const HTTP_REQ_AUTH_HEADER = "Authorization";
 const HTTP_REQ_PIAZZETTA_URL = "url";
 const HTTP_REQ_PIAZZETTA_APP_VERSION = "applicationversion";
-const HTTP_REQ_PIAZZETTA_APP_VERSION_VALUE = "1.8.5";
+const HTTP_REQ_PIAZZETTA_APP_VERSION_VALUE = "1.9.0";
 const HTTP_ACCEPT = "application/json, text/javascript, */*; q=0.01";
 const HTTP_CONTENT = "application/json";
 const HTTP_ORIGIN = "file://";
