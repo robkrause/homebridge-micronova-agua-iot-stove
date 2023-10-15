@@ -88,14 +88,18 @@ const HTTP_REQ_CUSTOMER_CODE_HEADER = "customer_code";
 const HTTP_REQ_UA_HEADER = "User-Agent";
 const HTTP_REQ_LOCAL_HEADER = "local";
 const HTTP_REQ_AUTH_HEADER = "Authorization";
+const HTTP_REQ_USERID_HEADER = "userid";
+const HTTP_REQ_AGUAID_HEADER = "aguaid";
 const HTTP_REQ_PIAZZETTA_URL = "url";
 const HTTP_REQ_PIAZZETTA_APP_VERSION = "applicationversion";
-const HTTP_REQ_PIAZZETTA_APP_VERSION_VALUE = "1.9.0";
+const HTTP_REQ_PIAZZETTA_APP_VERSION_VALUE = "1.9.5";
 const HTTP_ACCEPT = "application/json, text/javascript, */*; q=0.01";
 const HTTP_CONTENT = "application/json";
 const HTTP_ORIGIN = "file://";
 const HTTP_ID_BRAND = "1";
 const HTTP_UA = "homebridge-micronova-agua-iot-stove/" + PLUGIN_VERSION;
+const HTTP_USERID = "null";
+const HTTP_AGUAID = "null";
 const API_ALIENS = ["piazzetta"];
 const API_APPSIGNUP = "appSignup";
 const POST_API_APPSIGNUP_KEY_TYPE = "phone_type";
@@ -240,6 +244,8 @@ class HeaterCoolerMicronovaAguaIOTStove {
 		this.apiHTTPHeaders[HTTP_REQ_ID_BRAND_HEADER] = HTTP_ID_BRAND;
 		this.apiHTTPHeaders[HTTP_REQ_CUSTOMER_CODE_HEADER] = this.apiCustomerCode;
 		this.apiHTTPHeaders[HTTP_REQ_UA_HEADER] = HTTP_UA;
+		this.apiHTTPHeaders[HTTP_REQ_USERID_HEADER] = HTTP_USERID;
+		this.apiHTTPHeaders[HTTP_REQ_AGUAID_HEADER] = HTTP_AGUAID;
 		// Stove device
 		this.apiStoveDeviceID = null;
 		this.apiStoveDeviceProduct = null;
